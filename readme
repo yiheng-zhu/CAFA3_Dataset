@@ -17,6 +17,9 @@
         python combine_test_protein_list.py ./CAFA3/ ./test_protein_list
     [c] Extract test sequences
         python Select_Sequence_Name.py ./all_target_sequence.fasta ./test_sequence.fasta ./test_protein_list
+[8] Create NK/LK proteins:
+    python combine_NK_protein_list.py ./supplementary_data/cafa3/benchmark20171115/lists/ ./CAFA3/NK_protein_list
+    python combine_LK_protein_list.py ./supplementary_data/cafa3/benchmark20171115/lists/ ./CAFA3/LK_protein_list
 
 
 
