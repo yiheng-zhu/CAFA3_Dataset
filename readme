@@ -1,3 +1,12 @@
 [1] Download CAFA3 training dataset
     wegt https://biofunctionprediction.org/cafa-targets/CAFA3_training_data.tgz
-[2] 
+[2] Download CAFA target dataset
+    wget https://figshare.com/ndownloader/files/17519846
+[3] Download Gene Ontology (version: 2016-06-01) 
+    wget https://www.biofunctionprediction.org/annotations/gene_ontology_edit.obo.2016-06-01.gz
+[4] Format training sequences
+    python format_trianing_sequence.py ./CAFA3_training_data/uniprot_sprot_exp.fasta ./training_sequence.fasta
+[5] Create training labels
+    python create_training_label.py ./CAFA3_training_data/uniprot_sprot_exp.txt ./
+[6] Create test labels 
+    python create_test_label.py ./supplementary_data/cafa3/benchmark20171115/groundtruth/ ./CAFA3/
