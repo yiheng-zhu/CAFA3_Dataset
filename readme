@@ -10,3 +10,13 @@
     python create_training_label.py ./CAFA3_training_data/uniprot_sprot_exp.txt ./
 [6] Create test labels 
     python create_test_label.py ./supplementary_data/cafa3/benchmark20171115/groundtruth/ ./CAFA3/
+[7] Create test sequences
+    [a] Combine all target sequences
+        python combine_all_targets_sequences.py ./supplementary_data/cafa3/Targetfiles ./all_target_sequence.fasta
+    [b] Combine test protein list
+        python combine_test_protein_list.py ./CAFA3/ ./test_protein_list
+    [c] Extract test sequences
+        python Select_Sequence_Name.py ./all_target_sequence.fasta ./test_sequence.fasta ./test_protein_list
+
+
+
